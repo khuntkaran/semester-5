@@ -1,0 +1,15 @@
+E:\semester-5\.Net\01_simple\bin\Debug\net6.0\01_simple.exe
+E:\semester-5\.Net\01_simple\bin\Debug\net6.0\01_simple.deps.json
+E:\semester-5\.Net\01_simple\bin\Debug\net6.0\01_simple.runtimeconfig.json
+E:\semester-5\.Net\01_simple\bin\Debug\net6.0\01_simple.dll
+E:\semester-5\.Net\01_simple\bin\Debug\net6.0\01_simple.pdb
+E:\semester-5\.Net\01_simple\obj\Debug\net6.0\01_simple.csproj.AssemblyReference.cache
+E:\semester-5\.Net\01_simple\obj\Debug\net6.0\01_simple.GeneratedMSBuildEditorConfig.editorconfig
+E:\semester-5\.Net\01_simple\obj\Debug\net6.0\01_simple.AssemblyInfoInputs.cache
+E:\semester-5\.Net\01_simple\obj\Debug\net6.0\01_simple.AssemblyInfo.cs
+E:\semester-5\.Net\01_simple\obj\Debug\net6.0\01_simple.csproj.CoreCompileInputs.cache
+E:\semester-5\.Net\01_simple\obj\Debug\net6.0\01_simple.dll
+E:\semester-5\.Net\01_simple\obj\Debug\net6.0\refint\01_simple.dll
+E:\semester-5\.Net\01_simple\obj\Debug\net6.0\01_simple.pdb
+E:\semester-5\.Net\01_simple\obj\Debug\net6.0\01_simple.genruntimeconfig.cache
+E:\semester-5\.Net\01_simple\obj\Debug\net6.0\ref\01_simple.dll
