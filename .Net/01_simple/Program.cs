@@ -213,4 +213,99 @@ public class Program
         }
     }
 
+     static void OddEven2()
+        {
+            Console.Write("Enter Number : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Even : ");
+            for (int i = 1; i < a; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.Write(i + " ");
+                }
+            }
+            Console.WriteLine();
+            Console.Write("Odd : ");
+            for (int i = 1; i < a; i++)
+            {
+                if (i % 2 != 0)
+                {
+                    Console.Write(i + " ");
+                }
+            }
+            Console.WriteLine();
+        }
+        static void Reverse()
+        {
+            Console.Write("Enter Number : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            int a2 = 0;
+            while (a > 0)
+            {
+                int temp = a % 10;
+                a2 = (a2 * 10) + temp;
+                a = a / 10;
+            }
+            Console.WriteLine("Reverse Number : " + a2);
+            
+        }
+        static void Circle()
+        {
+            Console.Write("Enter Rediysh : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Circle Area : " + (3.14 * a * a));
+            Console.WriteLine("Circle Diameter : " + (2 * a));
+        }
+        static void MultiplicationTable()
+        {
+            Console.Write("Enter Number : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i < 11; i++)
+            {
+                Console.WriteLine(a + " x " + i + " = " + (a * i));
+            }
+        }
+        static void Power()
+        {
+            Console.Write("Enter Number : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Power : ");
+            int p = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Ans : " + Math.Pow(a, p));
+        }
+        static void Armstrong()
+        {
+            Console.Write("Enter Number : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            int n = a;
+            int a2 = 0;
+            int newno=0;
+            while (a > 0)
+            {
+                a2++;
+                a = a / 10;
+            }
+            a = n;
+            while (a > 0)
+            {
+                int temp = a % 10;
+                newno = newno + Convert.ToInt32(Math.Pow(temp,a2));
+                a = a / 10;
+            }
+            if (newno == n)
+            {
+                Console.WriteLine("Number is Armstrong");
+            }
+            else
+            {
+                Console.WriteLine("Number is Not Armstrong");
+            }
+        }
+
+
 }
