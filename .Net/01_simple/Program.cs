@@ -270,7 +270,7 @@ public class Program
         }
         Console.WriteLine();
     }
-    
+
     static void Reverse()
     {
         Console.Write("Enter Number : ");
@@ -285,7 +285,7 @@ public class Program
         Console.WriteLine("Reverse Number : " + a2);
 
     }
-    
+
     static void Circle()
     {
         Console.Write("Enter Rediysh : ");
@@ -294,7 +294,7 @@ public class Program
         Console.WriteLine("Circle Area : " + (3.14 * a * a));
         Console.WriteLine("Circle Diameter : " + (2 * a));
     }
-    
+
     static void MultiplicationTable()
     {
         Console.Write("Enter Number : ");
@@ -305,7 +305,7 @@ public class Program
             Console.WriteLine(a + " x " + i + " = " + (a * i));
         }
     }
-    
+
     static void Power()
     {
         Console.Write("Enter Number : ");
@@ -315,7 +315,7 @@ public class Program
 
         Console.WriteLine("Ans : " + Math.Pow(a, p));
     }
-    
+
     static void Armstrong()
     {
         Console.Write("Enter Number : ");

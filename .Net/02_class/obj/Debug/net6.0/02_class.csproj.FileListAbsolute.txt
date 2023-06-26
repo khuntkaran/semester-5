@@ -1,0 +1,15 @@
+E:\semester-5\.Net\02_class\bin\Debug\net6.0\02_class.exe
+E:\semester-5\.Net\02_class\bin\Debug\net6.0\02_class.deps.json
+E:\semester-5\.Net\02_class\bin\Debug\net6.0\02_class.runtimeconfig.json
+E:\semester-5\.Net\02_class\bin\Debug\net6.0\02_class.dll
+E:\semester-5\.Net\02_class\bin\Debug\net6.0\02_class.pdb
+E:\semester-5\.Net\02_class\obj\Debug\net6.0\02_class.csproj.AssemblyReference.cache
+E:\semester-5\.Net\02_class\obj\Debug\net6.0\02_class.GeneratedMSBuildEditorConfig.editorconfig
+E:\semester-5\.Net\02_class\obj\Debug\net6.0\02_class.AssemblyInfoInputs.cache
+E:\semester-5\.Net\02_class\obj\Debug\net6.0\02_class.AssemblyInfo.cs
+E:\semester-5\.Net\02_class\obj\Debug\net6.0\02_class.csproj.CoreCompileInputs.cache
+E:\semester-5\.Net\02_class\obj\Debug\net6.0\02_class.dll
+E:\semester-5\.Net\02_class\obj\Debug\net6.0\refint\02_class.dll
+E:\semester-5\.Net\02_class\obj\Debug\net6.0\02_class.pdb
+E:\semester-5\.Net\02_class\obj\Debug\net6.0\02_class.genruntimeconfig.cache
+E:\semester-5\.Net\02_class\obj\Debug\net6.0\ref\02_class.dll
