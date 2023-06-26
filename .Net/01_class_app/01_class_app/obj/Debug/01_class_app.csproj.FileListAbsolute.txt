@@ -1,0 +1,6 @@
+D:\kkk\01_class_app\01_class_app\bin\Debug\01_class_app.exe.config
+D:\kkk\01_class_app\01_class_app\obj\Debug\01_class_app.csprojResolveAssemblyReference.cache
+D:\kkk\01_class_app\01_class_app\bin\Debug\01_class_app.exe
+D:\kkk\01_class_app\01_class_app\bin\Debug\01_class_app.pdb
+D:\kkk\01_class_app\01_class_app\obj\Debug\01_class_app.exe
+D:\kkk\01_class_app\01_class_app\obj\Debug\01_class_app.pdb

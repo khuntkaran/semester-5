@@ -1,0 +1,5 @@
+D:\kkk\Candidate\Candidate\bin\Debug\Candidate.exe.config
+D:\kkk\Candidate\Candidate\bin\Debug\Candidate.exe
+D:\kkk\Candidate\Candidate\bin\Debug\Candidate.pdb
+D:\kkk\Candidate\Candidate\obj\Debug\Candidate.exe
+D:\kkk\Candidate\Candidate\obj\Debug\Candidate.pdb

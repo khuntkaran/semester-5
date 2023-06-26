@@ -1,0 +1,5 @@
+D:\kkk\Bank_Account\Bank_Account\bin\Debug\Bank_Account.exe.config
+D:\kkk\Bank_Account\Bank_Account\bin\Debug\Bank_Account.exe
+D:\kkk\Bank_Account\Bank_Account\bin\Debug\Bank_Account.pdb
+D:\kkk\Bank_Account\Bank_Account\obj\Debug\Bank_Account.exe
+D:\kkk\Bank_Account\Bank_Account\obj\Debug\Bank_Account.pdb
