@@ -55,5 +55,6 @@
                 Console.WriteLine("Invalid Choice");
                 break;
         }
+        Console.ReadLine();
     }
 }
