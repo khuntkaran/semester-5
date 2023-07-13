@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_exception_handling_interface_abstraction_string_fuction", "04_exception_handling_interface_abstraction_string_fuction\04_exception_handling_interface_abstraction_string_fuction.csproj", "{B6D7F036-7443-4DA6-B65B-2CCA955296E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6D7F036-7443-4DA6-B65B-2CCA955296E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D7F036-7443-4DA6-B65B-2CCA955296E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D7F036-7443-4DA6-B65B-2CCA955296E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D7F036-7443-4DA6-B65B-2CCA955296E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09614DD4-49FC-46D8-B849-E7330601A3CC}
+	EndGlobalSection
+EndGlobal

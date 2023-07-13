@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "04_exception_handling_interface_abstraction_string_fuction/1.0.0": {
+        "runtime": {
+          "04_exception_handling_interface_abstraction_string_fuction.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "04_exception_handling_interface_abstraction_string_fuction/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
