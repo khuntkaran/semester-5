@@ -23,6 +23,7 @@ namespace _04_exception_handling_interface_abstraction_string_fuction
             Console.WriteLine("SubString : " + st.Substring(5));
             Console.WriteLine("Trim : " + st.Trim());
             Console.WriteLine("String : "+st);
+            Console.WriteLine(st[0]);
         }
     }
 }

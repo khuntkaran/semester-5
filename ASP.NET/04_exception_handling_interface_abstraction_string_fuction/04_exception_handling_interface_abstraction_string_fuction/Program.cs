@@ -18,6 +18,7 @@ namespace _04_exception
             Console.WriteLine("5. Calculate Interface");
             Console.WriteLine("6. Shape Interface");
             Console.WriteLine("7. String Method");
+            Console.WriteLine("8. lower case to upper case and Vice-versa");
 
             Console.Write("Enter Choice : ");
             int i = Convert.ToInt32(Console.ReadLine());
@@ -55,6 +56,10 @@ namespace _04_exception
                 case 7:
                     _07_String_Method sm = new _07_String_Method();
                     sm.CommonMethod();
+                    break;
+                case 8:
+                    _08_lower_case_to_upper_case lcuc = new _08_lower_case_to_upper_case();
+                    lcuc.changeCase();
                     break;
                 default:
                     Console.WriteLine("Invalid choice");

@@ -1,0 +1,15 @@
+E:\semester-5\ASP.NET\06_Collection_Classes\06_Collection_Classes\bin\Debug\net6.0\06_Collection_Classes.exe
+E:\semester-5\ASP.NET\06_Collection_Classes\06_Collection_Classes\bin\Debug\net6.0\06_Collection_Classes.deps.json
+E:\semester-5\ASP.NET\06_Collection_Classes\06_Collection_Classes\bin\Debug\net6.0\06_Collection_Classes.runtimeconfig.json
+E:\semester-5\ASP.NET\06_Collection_Classes\06_Collection_Classes\bin\Debug\net6.0\06_Collection_Classes.dll
+E:\semester-5\ASP.NET\06_Collection_Classes\06_Collection_Classes\bin\Debug\net6.0\06_Collection_Classes.pdb
+E:\semester-5\ASP.NET\06_Collection_Classes\06_Collection_Classes\obj\Debug\net6.0\06_Collection_Classes.csproj.AssemblyReference.cache
+E:\semester-5\ASP.NET\06_Collection_Classes\06_Collection_Classes\obj\Debug\net6.0\06_Collection_Classes.GeneratedMSBuildEditorConfig.editorconfig
+E:\semester-5\ASP.NET\06_Collection_Classes\06_Collection_Classes\obj\Debug\net6.0\06_Collection_Classes.AssemblyInfoInputs.cache
+E:\semester-5\ASP.NET\06_Collection_Classes\06_Collection_Classes\obj\Debug\net6.0\06_Collection_Classes.AssemblyInfo.cs
+E:\semester-5\ASP.NET\06_Collection_Classes\06_Collection_Classes\obj\Debug\net6.0\06_Collection_Classes.csproj.CoreCompileInputs.cache
+E:\semester-5\ASP.NET\06_Collection_Classes\06_Collection_Classes\obj\Debug\net6.0\06_Collection_Classes.dll
+E:\semester-5\ASP.NET\06_Collection_Classes\06_Collection_Classes\obj\Debug\net6.0\refint\06_Collection_Classes.dll
+E:\semester-5\ASP.NET\06_Collection_Classes\06_Collection_Classes\obj\Debug\net6.0\06_Collection_Classes.pdb
+E:\semester-5\ASP.NET\06_Collection_Classes\06_Collection_Classes\obj\Debug\net6.0\06_Collection_Classes.genruntimeconfig.cache
+E:\semester-5\ASP.NET\06_Collection_Classes\06_Collection_Classes\obj\Debug\net6.0\ref\06_Collection_Classes.dll
