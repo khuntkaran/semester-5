@@ -1,0 +1,31 @@
+﻿@using Form.Areas.LOC_Contry.Models;
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Form.Areas.LOC_Contry.Models.LOC_CountryModel
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<h1>@ViewBag.Data</h1>
+<form method="post" asp-area="LOC_Country" asp-controller="LOC_Country" asp-action="Save">
+    <input type="hidden" asp-for="CountryID"/>
+    <table class="table" align="center">
+        <tr>
+            <td>Country Name</td>
+            <td>:</td>
+            <td><input asp-for="CountryName"  type="text" placeholder="Country Name" /><br /><span class="text-danger" asp-validation-for="CountryName"></span></td>
+        </tr>
+        <tr>
+            <td>Country Code</td>
+            <td>:</td>
+            <td><input asp-for="CountryCode" type="text" placeholder="Country Code" /><br /><span class="text-danger" asp-validation-for="CountryCode"></span></td>
+        </tr>
+    </table>
+    <div class="d-flex justify-content-center">
+        <input class="btn btn-success " type="submit" />
+
+    </div>
+</form>
