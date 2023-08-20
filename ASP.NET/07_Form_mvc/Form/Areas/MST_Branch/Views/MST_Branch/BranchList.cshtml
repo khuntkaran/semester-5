@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "BranchList";
+}
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model System.Data.DataTable;
+<p>@ViewBag.Data</p>
+
+<a class="btn btn-outline-primary " asp-area="MST_Branch" asp-controller="MST_Branch" asp-action="AddBranch">Add Branch</a>
+<table class="table text-center table-striped">
+    <thead>
+        <tr class="">
+            <th scope="col">Branch ID</th>
+            <th scope="col">Branch Name</th>
+            <th scope="col">Branch Code</th>
+            <th scope="col">Created</th>
+            <th scope="col">Modified</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (System.Data.DataRow row in Model.Rows)
+        {
+            <tr>
+                <th scope="row">@row["BranchID"]</th>
+                <td>@row["BranchName"]</td>
+                <td>@row["BranchCode"]</td>
+                <td>@row["Created"]</td>
+                <td>@row["Modified"]</td>
+                <td>
+                    <form method="post" asp-area="MST_Branch" asp-controller="MST_Branch" asp-action="AddBranch" asp-route-BranchID="@Convert.ToInt32(row["BranchID"])">
+                        <button type="submit" class="btn btn-outline-warning">Edit</button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" asp-area="MST_Branch" asp-controller="MST_Branch" asp-action="DeleteBranch" asp-route-BranchID="@Convert.ToInt32(row["BranchID"])">
+                        <button type="submit" class="btn btn-outline-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

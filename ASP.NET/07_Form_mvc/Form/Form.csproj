@@ -8,7 +8,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.9" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.9" />
+    <PackageReference Include="NHibernate" Version="5.4.5" />
     <PackageReference Include="runtime.win-x64.runtime.native.System.Data.SqlClient.sni" Version="4.4.0" />
     <PackageReference Include="SqlConnection" Version="1.0.4">
       <PrivateAssets>all</PrivateAssets>
@@ -16,6 +17,13 @@
     </PackageReference>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
     <PackageReference Include="System.Net.Http" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\LOC_City\Data\" />
+    <Folder Include="Areas\LOC_State\Data\" />
+    <Folder Include="Areas\MST_Branch\Data\" />
+    <Folder Include="Areas\MST_Student\Data\" />
   </ItemGroup>
 
 </Project>

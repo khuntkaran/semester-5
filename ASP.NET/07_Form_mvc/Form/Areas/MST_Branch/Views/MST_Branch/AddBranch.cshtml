@@ -1,0 +1,30 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Form.Areas.MST_Branch.Models.MST_BranchModel
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<h1>@ViewBag.Data</h1>
+<form method="post" asp-area="MST_Branch" asp-controller="MST_Branch" asp-action="Save">
+    <input type="hidden" asp-for="BranchID" />
+    <table class="table" align="center">
+        <tr>
+            <td>Branch Name</td>
+            <td>:</td>
+            <td><input asp-for="BranchName" type="text" placeholder="Branch Name" /><br /><span class="text-danger" asp-validation-for="BranchName"></span></td>
+        </tr>
+        <tr>
+            <td>Branch Code</td>
+            <td>:</td>
+            <td><input asp-for="BranchCode" type="text" placeholder="Branch Code" /><br /><span class="text-danger" asp-validation-for="BranchCode"></span></td>
+        </tr>
+    </table>
+    <div class="d-flex justify-content-center">
+        <input class="btn btn-outline-success " type="submit" />
+
+    </div>
+</form>

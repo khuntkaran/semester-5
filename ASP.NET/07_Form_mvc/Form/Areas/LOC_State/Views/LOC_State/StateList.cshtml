@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "StateList";
+}
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model System.Data.DataTable;
+
+<a class="btn btn-outline-primary " asp-area="LOC_State" asp-controller="LOC_State" asp-action="AddState">Add State</a>
+<table class="table text-center table-striped">
+    <thead>
+        <tr class="">
+            <th scope="col">State ID</th>
+            <th scope="col">State Name</th>
+            <th scope="col">State Code</th>
+            <th scope="col">Country Name</th>
+            <th scope="col">Created</th>
+            <th scope="col">Modified</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (System.Data.DataRow row in Model.Rows)
+        {
+            <tr>
+                <th scope="row">@row["StateID"]</th>
+                <td>@row["StateName"]</td>
+                <td>@row["StateCode"]</td>
+                <td>@row["CountryName"]</td>
+                <td>@row["Created"]</td>
+                <td>@row["Modified"]</td>
+                <td>
+                    <form method="post" asp-area="LOC_State" asp-controller="LOC_State" asp-action="AddState" asp-route-StateID="@Convert.ToInt32(row["StateID"])">
+                        <button type="submit" class="btn btn-outline-warning">Edit</button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" asp-area="LOC_State" asp-controller="LOC_State" asp-action="DeleteState" asp-route-StateID="@Convert.ToInt32(row["StateID"])">
+                        <button type="submit" class="btn btn-outline-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

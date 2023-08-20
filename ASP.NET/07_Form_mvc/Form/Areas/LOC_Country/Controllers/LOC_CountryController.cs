@@ -15,7 +15,7 @@ namespace Form.Areas.LOC_Contry.Controllers
             _configuration = configuration;
         }
 
-        public IActionResult Index()
+        public IActionResult CountryList()
         {
             try
             {
@@ -30,11 +30,11 @@ namespace Form.Areas.LOC_Contry.Controllers
                 dt.Load(objDataReader);
                 conn.Close();
                 
-                return View("Index",dt);
+                return View(dt);
             }
             catch(Exception ex)
             {
-                return View("Index");
+                return View();
             }
         }
 
@@ -42,7 +42,7 @@ namespace Form.Areas.LOC_Contry.Controllers
         {
             if(CountryID != null)
             {
-                ViewBag.Data = "for Edit";
+                ViewBag.Data = "For Edit";
                 try
                 {
                     String connectionStr = this._configuration.GetConnectionString("myConnectionString");
@@ -71,12 +71,8 @@ namespace Form.Areas.LOC_Contry.Controllers
             }
             else
             {
-                LOC_CountryModel LC = new LOC_CountryModel
-                {
-                    CountryID = CountryID
-                };
-                ViewBag.Data = "for add";
-                return View(LC);
+                ViewBag.Data = "For Add";
+                return View();
             }
             
         }
@@ -103,11 +99,11 @@ namespace Form.Areas.LOC_Contry.Controllers
                 objCmd.Parameters.AddWithValue("@CountryCode", CountryModel.CountryCode);
                 objCmd.ExecuteReader();
                 conn.Close();
-                return RedirectToAction("Index");
+                return RedirectToAction("CountryList");
             }
             catch (Exception ex)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("CountryList");
             }
         }
 
@@ -124,11 +120,11 @@ namespace Form.Areas.LOC_Contry.Controllers
                 objCmd.Parameters.AddWithValue("@CountryID", CountryID);
                 objCmd.ExecuteReader();
                 conn.Close();
-                return RedirectToAction("Index");
+                return RedirectToAction("CountryList");
             }
             catch(Exception ex)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("CountryList");
             }
         }
     }

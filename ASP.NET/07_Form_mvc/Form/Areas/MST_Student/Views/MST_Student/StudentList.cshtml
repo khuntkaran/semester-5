@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "StudentList";
+}
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model System.Data.DataTable;
+<p>@ViewBag.Data</p>
+
+<a class="btn btn-outline-primary " asp-area="MST_Student" asp-controller="MST_Student" asp-action="AddStudent">Add Student</a>
+<table class="table text-center table-striped" >
+    <thead>
+        <tr class="">
+            <th scope="col">Student ID</th>
+            <th scope="col">Student Name</th>
+
+            <th scope="col">BranchName</th>
+            <th scope="col">CityName</th>
+            <th scope="col">StateName</th>
+            <th scope="col">CountryName</th>
+            <th scope="col">MobileNoStudent</th>
+            <th scope="col">Email</th>
+            <th scope="col">MobileNoFather</th>
+            <th scope="col">Address</th>
+            <th scope="col">BirthDate</th>
+            <br />
+            <th scope="col">Age</th>
+            <th scope="col">IsActive</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Password</th>
+            
+            <th scope="col">Created</th>
+            <th scope="col">Modified</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (System.Data.DataRow row in Model.Rows)
+        {
+            <tr>
+                <th scope="row">@row["StudentID"]</th>
+                <td>@row["StudentName"]</td>
+
+                <td>@row["BranchName"]</td>
+                <td>@row["CityName"]</td>
+                <td>@row["StateName"]</td>
+                <td>@row["CountryName"]</td>
+                <td>@row["MobileNoStudent"]</td>
+                <td>@row["Email"]</td>
+                <td>@row["MobileNoFather"]</td>
+                <td>@row["Address"]</td>
+                <td>@row["BirthDate"]</td>
+                <td>@row["Age"]</td>
+                <td>@row["IsActive"]</td>
+                <td>@row["Gender"]</td>
+                <td>@row["Password"]</td>
+
+                <td>@row["Created"]</td>
+                <td>@row["Modified"]</td>
+                <td>
+                    <form method="post" asp-area="MST_Student" asp-controller="MST_Student" asp-action="AddStudent" asp-route-StudentID="@Convert.ToInt32(row["StudentID"])">
+                        <button type="submit" class="btn btn-outline-warning">Edit</button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" asp-area="MST_Student" asp-controller="MST_Student" asp-action="DeleteStudent" asp-route-StudentID="@Convert.ToInt32(row["StudentID"])">
+                        <button type="submit" class="btn btn-outline-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

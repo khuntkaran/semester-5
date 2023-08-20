@@ -1,0 +1,44 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Form.Areas.LOC_State.Models.LOC_StateModel;
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<h1>@ViewBag.Data</h1>
+<form method="post" asp-area="LOC_State" asp-controller="LOC_State" asp-action="Save">
+    <input type="hidden" asp-for="StateID" />
+    <table class="table" align="center">
+        <tr>
+            <td>State Name</td>
+            <td>:</td>
+            <td><input asp-for="StateName" type="text" placeholder="State Name" /><br /><span class="text-danger" asp-validation-for="StateName"></span></td>
+        </tr>
+        <tr>
+            <td>State Code</td>
+            <td>:</td>
+            <td><input asp-for="StateCode" type="text" placeholder="State Code" /><br /><span class="text-danger" asp-validation-for="StateCode"></span></td>
+        </tr>
+        <tr>
+            <td>Country Name</td>
+            <td>:</td>
+            <td>
+                <select class=" " asp-for="CountryID">
+                    <option value="none" selected disabled hidden>Select an Option</option>
+                    @foreach (Dictionary<String,dynamic> ops in Model.Countrys)
+                    {
+                        <option value="@ops["CountryID"]">@ops["CountryName"]</option>
+                    }
+                </select><br/>
+                <span class="text-danger" asp-validation-for="CountryID"></span>
+             </td>
+        </tr>
+    </table>
+    <div class="d-flex justify-content-center">
+        <input class="btn btn-outline-success " type="submit" />
+
+    </div>
+</form>

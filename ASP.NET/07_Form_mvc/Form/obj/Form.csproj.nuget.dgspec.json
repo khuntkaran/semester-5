@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\semester-5\\ASP.NET\\wasteg\\Form\\Form\\Form.csproj": {}
+    "E:\\semester-5\\ASP.NET\\07_Form_mvc\\Form\\Form.csproj": {}
   },
   "projects": {
-    "E:\\semester-5\\ASP.NET\\wasteg\\Form\\Form\\Form.csproj": {
+    "E:\\semester-5\\ASP.NET\\07_Form_mvc\\Form\\Form.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\semester-5\\ASP.NET\\wasteg\\Form\\Form\\Form.csproj",
+        "projectUniqueName": "E:\\semester-5\\ASP.NET\\07_Form_mvc\\Form\\Form.csproj",
         "projectName": "Form",
-        "projectPath": "E:\\semester-5\\ASP.NET\\wasteg\\Form\\Form\\Form.csproj",
+        "projectPath": "E:\\semester-5\\ASP.NET\\07_Form_mvc\\Form\\Form.csproj",
         "packagesPath": "C:\\Users\\Apex\\.nuget\\packages\\",
-        "outputPath": "E:\\semester-5\\ASP.NET\\wasteg\\Form\\Form\\obj\\",
+        "outputPath": "E:\\semester-5\\ASP.NET\\07_Form_mvc\\Form\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Apex\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,7 +47,11 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[7.0.8, )"
+              "version": "[7.0.9, )"
+            },
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.4.5, )"
             },
             "SqlConnection": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

@@ -9,49 +9,113 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Form
 build_property.RootNamespace = Form
-build_property.ProjectDir = E:\semester-5\ASP.NET\wasteg\Form\Form\
+build_property.ProjectDir = E:\semester-5\ASP.NET\07_Form_mvc\Form\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\semester-5\ASP.NET\wasteg\Form\Form
+build_property.MSBuildProjectDirectory = E:\semester-5\ASP.NET\07_Form_mvc\Form
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/semester-5/ASP.NET/wasteg/Form/Form/Areas/LOC_Country/Views/LOC_Country/AddCountry.cshtml]
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/LOC_City/Views/LOC_City/AddCity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NpdHlcVmlld3NcTE9DX0NpdHlcQWRkQ2l0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/LOC_City/Views/LOC_City/CityList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NpdHlcVmlld3NcTE9DX0NpdHlcQ2l0eUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/LOC_City/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NpdHlcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/LOC_City/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NpdHlcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/LOC_Country/Views/LOC_Country/AddCountry.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NvdW50cnlcVmlld3NcTE9DX0NvdW50cnlcQWRkQ291bnRyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/semester-5/ASP.NET/wasteg/Form/Form/Areas/LOC_Country/Views/LOC_Country/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NvdW50cnlcVmlld3NcTE9DX0NvdW50cnlcSW5kZXguY3NodG1s
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/LOC_Country/Views/LOC_Country/CountryLIst.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NvdW50cnlcVmlld3NcTE9DX0NvdW50cnlcQ291bnRyeUxJc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/semester-5/ASP.NET/wasteg/Form/Form/Areas/LOC_Country/Views/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NvdW50cnlcVmlld3NcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/LOC_Country/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NvdW50cnlcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/semester-5/ASP.NET/wasteg/Form/Form/Areas/LOC_Country/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NvdW50cnlcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/LOC_Country/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NvdW50cnlcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/semester-5/ASP.NET/wasteg/Form/Form/Views/Home/Index.cshtml]
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/LOC_State/Views/LOC_State/AddState.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX1N0YXRlXFZpZXdzXExPQ19TdGF0ZVxBZGRTdGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/LOC_State/Views/LOC_State/StateList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX1N0YXRlXFZpZXdzXExPQ19TdGF0ZVxTdGF0ZUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/LOC_State/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX1N0YXRlXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/LOC_State/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX1N0YXRlXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/MST_Branch/Views/MST_Branch/AddBranch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX0JyYW5jaFxWaWV3c1xNU1RfQnJhbmNoXEFkZEJyYW5jaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/MST_Branch/Views/MST_Branch/BranchList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX0JyYW5jaFxWaWV3c1xNU1RfQnJhbmNoXEJyYW5jaExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/MST_Branch/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX0JyYW5jaFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/MST_Branch/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX0JyYW5jaFxfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/MST_Student/Views/MST_Student/AddStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX1N0dWRlbnRcVmlld3NcTVNUX1N0dWRlbnRcQWRkU3R1ZGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/MST_Student/Views/MST_Student/StudentList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX1N0dWRlbnRcVmlld3NcTVNUX1N0dWRlbnRcU3R1ZGVudExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/MST_Student/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX1N0dWRlbnRcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/MST_Student/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX1N0dWRlbnRcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/semester-5/ASP.NET/wasteg/Form/Form/Views/Shared/Error.cshtml]
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/semester-5/ASP.NET/wasteg/Form/Form/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/semester-5/ASP.NET/wasteg/Form/Form/Views/_ViewImports.cshtml]
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/semester-5/ASP.NET/wasteg/Form/Form/Views/_ViewStart.cshtml]
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/semester-5/ASP.NET/wasteg/Form/Form/Views/Shared/_Layout.cshtml]
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-01z94o7pmg
