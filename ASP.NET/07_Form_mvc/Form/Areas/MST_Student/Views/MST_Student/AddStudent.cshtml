@@ -4,4 +4,79 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+@model Form.Areas.MST_Student.Models.MST_StudentModel
 <h1>@ViewBag.Data</h1>
+<form method="post" asp-area="MST_Student" asp-controller="MST_Student" asp-action="Save">
+    <input type="hidden" asp-for="StudentID" />
+    <table class="table" align="center">
+        <tr>
+            <td>Student Name</td>
+            <td>:</td>
+            <td><input asp-for="StudentName" type="text" placeholder="Student Name" /><br /><span class="text-danger" asp-validation-for="StudentName"></span></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td><input asp-for="Email" type="text" placeholder="Student Email" /><br /><span class="text-danger" asp-validation-for="Email"></span></td>
+        </tr>
+        <tr>
+            <td>MobileNoStudent</td>
+            <td>:</td>
+            <td><input asp-for="MobileNoStudent" type="text" placeholder="MobileNoStudent" /><br /><span class="text-danger" asp-validation-for="MobileNoStudent"></span></td>
+        </tr>
+        <tr>
+            <td>MobileNoFather</td>
+            <td>:</td>
+            <td><input asp-for="MobileNoFather" type="text" placeholder="MobileNoFather" /><br /><span class="text-danger" asp-validation-for="MobileNoFather"></span></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>:</td>
+            <td><input asp-for="Address" type="text" placeholder="Address" /><br /><span class="text-danger" asp-validation-for="Address"></span></td>
+        </tr>
+        @*<tr>
+            <td>State Name</td>
+            <td>:</td>
+            <td>
+                <select class=" " asp-for="StateID">
+                    <option value="none" selected disabled hidden>Select an Option</option>
+                    <option>demo1</option>
+                    <option>demo2</option>
+                    <option>demo3</option>
+
+                    @foreach (Dictionary<String, dynamic> ops in Model.Countrys)
+                    {
+                    <option value="@ops["CountryID"]">@ops["CountryName"]</option>
+                    }
+                </select><br />
+                <span class="text-danger" asp-validation-for="StateID"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Country Name</td>
+            <td>:</td>
+            <td>
+                <select class=" " asp-for="CountryID">
+                    <option value="none" selected disabled hidden>Select an Option</option>
+                    <option>demo1</option>
+                    <option>demo2</option>
+                    <option>demo3</option>
+                    @* @foreach (Dictionary<String, dynamic> ops in Model.Countrys)
+                    {
+                    <option value="@ops["CountryID"]">@ops["CountryName"]</option>
+                    }
+                </select><br />
+                <span class="text-danger" asp-validation-for="CountryID"></span>
+            </td>
+        </tr>*@
+    </table>
+    <div class="d-flex justify-content-center">
+        <input class="btn btn-outline-success " type="submit" />
+
+    </div>
+</form>

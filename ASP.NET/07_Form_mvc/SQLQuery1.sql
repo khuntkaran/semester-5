@@ -510,7 +510,7 @@ exec [dbo].[PR_Branch_DeleteByPK] 3
 //----------------------student table-----------------------
 
 
-CREATE PROCEDURE [dbo].[PR_Student_SelectAll]
+alter PROCEDURE [dbo].[PR_Student_SelectAll]
 as
 select
 [dbo].[MST_Student].[StudentID]
@@ -538,7 +538,7 @@ on [dbo].[MST_Student].[CityID]=[dbo].[LOC_City].[CityID]
 inner join [dbo].[LOC_State]
 on [dbo].[LOC_City].[StateID]=[dbo].[LOC_State].[StateID]
 inner join [dbo].[LOC_Country]
-on [dbo].[LOC_State].[CountryID]=[dbo].[LOC_Country].[CountryID]
+on [dbo].[LOC_City].[CountryID]=[dbo].[LOC_Country].[CountryID]
 inner join [dbo].[MST_Branch]
 on [dbo].[MST_Student].[BranchID]=[dbo].[MST_Branch].[BranchID]
 order by 

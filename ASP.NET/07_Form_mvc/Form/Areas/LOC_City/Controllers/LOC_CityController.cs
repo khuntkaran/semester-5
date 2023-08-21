@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Form.Areas.LOC_City.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using System.Data;
 
@@ -37,13 +38,19 @@ namespace Form.Areas.LOC_City.Controllers
         {
             if(CityID != null)
             {
-                ViewBag.Data=CityID;
+                ViewBag.Data="For Edit";
             }
             else
             {
-                ViewBag.Data=-1;
+                ViewBag.Data = "For Add";
             }
             return View();
+        }
+
+
+        public IActionResult Save(LOC_CityModel city)
+        {
+            return RedirectToAction("CityList");
         }
 
         public IActionResult DeleteCity(int CityID)

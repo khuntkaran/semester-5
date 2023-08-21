@@ -4,4 +4,65 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@model Form.Areas.LOC_City.Models.LOC_CityModel;
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
 <h1>@ViewBag.Data</h1>
+<form method="post" asp-area="LOC_City" asp-controller="LOC_City" asp-action="Save">
+    <input type="hidden" asp-for="CityID" />
+    <table class="table" align="center">
+        <tr>
+            <td>City Name</td>
+            <td>:</td>
+            <td><input asp-for="CityName" type="text" placeholder="City Name" /><br /><span class="text-danger" asp-validation-for="CityName"></span></td>
+        </tr>
+        <tr>
+            <td>City Code</td>
+            <td>:</td>
+            <td><input asp-for="CityCode" type="text" placeholder="City Code" /><br /><span class="text-danger" asp-validation-for="CityCode"></span></td>
+        </tr>
+        <tr>
+            <td>Country Name</td>
+            <td>:</td>
+            <td>
+                <select class=" " asp-for="CountryID">
+                    <option value="none" selected disabled hidden>Select an Option</option>
+                    <option>demo1</option>
+                    <option>demo2</option>
+                    <option>demo3</option>
+                    @* @foreach (Dictionary<String, dynamic> ops in Model.Countrys)
+                    {
+                    <option value="@ops["CountryID"]">@ops["CountryName"]</option>
+                    }*@
+                </select><br />
+                <span class="text-danger" asp-validation-for="CountryID"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>State Name</td>
+            <td>:</td>
+            <td>
+                <select class=" " asp-for="StateID">
+                    <option value="none" selected disabled hidden>Select an Option</option>
+                    <option>demo1</option>
+                    <option>demo2</option>
+                    <option>demo3</option>
+
+                    @*@foreach (Dictionary<String, dynamic> ops in Model.Countrys)
+                    {
+                        <option value="@ops["CountryID"]">@ops["CountryName"]</option>
+                    }*@
+                </select><br />
+                <span class="text-danger" asp-validation-for="StateID"></span>
+            </td>
+        </tr>
+       
+    </table>
+    <div class="d-flex justify-content-center">
+        <input class="btn btn-outline-success " type="submit" />
+
+    </div>
+</form>

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Form.Areas.MST_Student.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.Operations;
 using Microsoft.Data.SqlClient;
 using System.Data;
@@ -40,13 +41,19 @@ namespace Form.Areas.MST_Student.Controllers
         {
             if(StudentID != null)
             {
-                ViewBag.Data = StudentID;
+                ViewBag.Data = "For Edit";
             }
             else
             {
-                ViewBag.Data = -1;
+                ViewBag.Data = "For Add";
             }
             return View();
+        }
+
+
+        public IActionResult Save(MST_StudentModel studentModel)
+        {
+            return RedirectToAction("StudentList");
         }
 
         public IActionResult DeleteStudent(int StudentID)
