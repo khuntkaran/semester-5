@@ -17,5 +17,16 @@ namespace Form.Areas.LOC_City.Models
 
         [Required]
         public int CountryID { get; set; }
+
+        public List<CountryDropDown> CountryDrops { get; set; }
+    }
+
+    public class CountryDropDown
+    {
+        [Required]
+        public int CountryID { get; set; }
+
+        [Required]
+        public string CountryName { get; set; }
     }
 }

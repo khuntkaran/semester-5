@@ -1,4 +1,5 @@
-﻿@*
+﻿@using Form.Areas.LOC_City.Models;
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
@@ -30,13 +31,12 @@
             <td>
                 <select class=" " asp-for="CountryID">
                     <option value="none" selected disabled hidden>Select an Option</option>
-                    <option>demo1</option>
-                    <option>demo2</option>
-                    <option>demo3</option>
-                    @* @foreach (Dictionary<String, dynamic> ops in Model.Countrys)
+                    @foreach (CountryDropDown ops in Model.CountryDrops)
                     {
-                    <option value="@ops["CountryID"]">@ops["CountryName"]</option>
-                    }*@
+                    <option value="@ops.CountryID">@ops.CountryName</option>
+                    }
+@*                    @Html.DropDownListFor(model => model.CountryDrops, Model.CountryDrops, "Select Country")
+*@
                 </select><br />
                 <span class="text-danger" asp-validation-for="CountryID"></span>
             </td>

@@ -36,15 +36,55 @@ namespace Form.Areas.LOC_City.Controllers
         
         public IActionResult AddCity(int? CityID)
         {
-            if(CityID != null)
+            LOC_CityModel LC = new LOC_CityModel();
+            try
             {
-                ViewBag.Data="For Edit";
+                String connectionStr = this._configuration.GetConnectionString("myConnectionString");
+                DataTable dt = new DataTable();
+                SqlConnection conn = new SqlConnection(connectionStr);
+                conn.Open();
+                SqlCommand objCmd = conn.CreateCommand();
+                objCmd.CommandType = CommandType.StoredProcedure;
+                objCmd.CommandText = "PR_Country_SelectAll";
+                SqlDataReader objDataReader = objCmd.ExecuteReader();
+                dt.Load(objDataReader);
+                List<CountryDropDown> Countrys = new List<CountryDropDown>();
+                foreach (System.Data.DataRow row in dt.Rows)
+                {
+                    CountryDropDown Country = new CountryDropDown();
+                    Country.CountryName=(string)row["CountryName"];
+                    Country.CountryID=(int)row["CountryID"];
+                    Countrys.Add(Country);
+                };
+                LC.CountryDrops = Countrys;
+                if (CityID != null)
+                {
+                    ViewBag.Data = "For Edit";
+                   
+                    DataTable dt2 = new DataTable();
+                    SqlCommand objcmd2 = conn.CreateCommand(); 
+                    objcmd2.CommandType = CommandType.StoredProcedure;
+                    objcmd2.CommandText = "PR_City_SelectByPK";
+                    objcmd2.Parameters.AddWithValue("@CityID", CityID);
+                    SqlDataReader objdatareder2 = objcmd2.ExecuteReader();
+                    dt2.Load(objdatareder2);
+                    conn.Close();
+                    LC.CityID = (int?)dt2.Rows[0]["CityID"];
+                    LC.CityName = (string)dt2.Rows[0]["CityName"];
+                    LC.CityCode = (string)dt2.Rows[0]["CityCode"];
+                    LC.CountryID = (int)dt2.Rows[0]["CountryID"];
+                    LC.StateID = (int)dt2.Rows[0]["StateID"];
+                }
+                else
+                {
+                    ViewBag.Data = "For Add";
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ViewBag.Data = "For Add";
             }
-            return View();
+            
+            return View(LC);
         }
 
 
