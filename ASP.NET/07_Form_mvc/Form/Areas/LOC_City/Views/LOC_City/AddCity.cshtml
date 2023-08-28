@@ -11,7 +11,6 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
-<h1>@ViewBag.Data</h1>
 <form method="post" asp-area="LOC_City" asp-controller="LOC_City" asp-action="Save">
     <input type="hidden" asp-for="CityID" />
     <table class="table" align="center">
@@ -29,7 +28,7 @@
             <td>Country Name</td>
             <td>:</td>
             <td>
-                <select class=" " asp-for="CountryID">
+                <select class=" " asp-for="CountryID" onchange="stateChange()">
                     <option value="none" selected disabled hidden>Select an Option</option>
                     @foreach (CountryDropDown ops in Model.CountryDrops)
                     {
@@ -45,7 +44,7 @@
             <td>State Name</td>
             <td>:</td>
             <td>
-                <select class=" " asp-for="StateID">
+                <select class=" " id="" asp-for="StateID">
                     <option value="none" selected disabled hidden>Select an Option</option>
                     <option>demo1</option>
                     <option>demo2</option>
@@ -66,3 +65,27 @@
 
     </div>
 </form>
+
+
+@section Scripts{
+    <script>
+        function stateChange() {
+            console.log(hiii)
+            var CountryID = $("#CountryID").val();
+
+            if (CountryID !== "") {
+                $("#StateID").empty();
+                $("#StateID").append($("<option></option>").val("").html("Select State"));
+                $.ajax(
+                    
+
+                )
+            }
+            else {
+                $("#StateID").empty();
+                $("#StateID").append($("<option></option>").val("").html("Select State"));
+            }
+        }
+    </script>
+    
+}

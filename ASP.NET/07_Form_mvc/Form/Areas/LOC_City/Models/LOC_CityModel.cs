@@ -19,6 +19,9 @@ namespace Form.Areas.LOC_City.Models
         public int CountryID { get; set; }
 
         public List<CountryDropDown> CountryDrops { get; set; }
+
+        public List<StateDropDown> StateDrops { get; set; }
+
     }
 
     public class CountryDropDown
@@ -28,5 +31,14 @@ namespace Form.Areas.LOC_City.Models
 
         [Required]
         public string CountryName { get; set; }
+    }
+
+    public class StateDropDown
+    {
+        [Required]
+        public int StateID { get; set; }
+
+        [Required]
+        public String StateName { get; set; }
     }
 }

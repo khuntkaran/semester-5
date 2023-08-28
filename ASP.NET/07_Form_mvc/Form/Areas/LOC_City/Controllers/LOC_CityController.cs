@@ -9,9 +9,10 @@ namespace Form.Areas.LOC_City.Controllers
     public class LOC_CityController : Controller
     {
         private readonly IConfiguration _configuration;
-        public LOC_CityController(IConfiguration configuration){
+        public LOC_CityController(IConfiguration configuration)
+        {
             _configuration = configuration;
-            }
+        }
         public IActionResult CityList()
         {
             try
@@ -28,12 +29,12 @@ namespace Form.Areas.LOC_City.Controllers
                 conn.Close();
                 return View(Dt);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return View();
             }
         }
-        
+
         public IActionResult AddCity(int? CityID)
         {
             LOC_CityModel LC = new LOC_CityModel();
@@ -52,17 +53,17 @@ namespace Form.Areas.LOC_City.Controllers
                 foreach (System.Data.DataRow row in dt.Rows)
                 {
                     CountryDropDown Country = new CountryDropDown();
-                    Country.CountryName=(string)row["CountryName"];
-                    Country.CountryID=(int)row["CountryID"];
+                    Country.CountryName = (string)row["CountryName"];
+                    Country.CountryID = (int)row["CountryID"];
                     Countrys.Add(Country);
                 };
                 LC.CountryDrops = Countrys;
                 if (CityID != null)
                 {
                     ViewBag.Data = "For Edit";
-                   
+
                     DataTable dt2 = new DataTable();
-                    SqlCommand objcmd2 = conn.CreateCommand(); 
+                    SqlCommand objcmd2 = conn.CreateCommand();
                     objcmd2.CommandType = CommandType.StoredProcedure;
                     objcmd2.CommandText = "PR_City_SelectByPK";
                     objcmd2.Parameters.AddWithValue("@CityID", CityID);
@@ -83,7 +84,7 @@ namespace Form.Areas.LOC_City.Controllers
             catch (Exception ex)
             {
             }
-            
+
             return View(LC);
         }
 
@@ -98,21 +99,53 @@ namespace Form.Areas.LOC_City.Controllers
             try
             {
                 String connectionstr = this._configuration.GetConnectionString("myConnectionString");
-                DataTable Dt =new DataTable();
+                DataTable Dt = new DataTable();
                 SqlConnection conn = new SqlConnection(connectionstr);
                 conn.Open();
                 SqlCommand cmd = conn.CreateCommand();
-                cmd.CommandType= CommandType.StoredProcedure;
+                cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "PR_City_DeleteByPK";
                 cmd.Parameters.AddWithValue("CityID", CityID);
                 cmd.ExecuteReader();
                 conn.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
             return RedirectToAction("CityList");
+        }
+
+        public void SetState(int CountryID)
+        {
+            LOC_CityModel LC = new LOC_CityModel();
+            try
+            {
+                String connectionStr = this._configuration.GetConnectionString("myConnectionString");
+                DataTable dt = new DataTable();
+                SqlConnection conn = new SqlConnection(connectionStr);
+                conn.Open();
+                SqlCommand objCmd = conn.CreateCommand();
+                objCmd.CommandType = CommandType.StoredProcedure;
+                objCmd.CommandText = "PR_State_SelectByFK";
+                objCmd.Parameters.AddWithValue("CountryID", @CountryID);
+                SqlDataReader objDataReader = objCmd.ExecuteReader();
+                dt.Load(objDataReader);
+                List<StateDropDown> States = new List<StateDropDown>();
+                foreach (System.Data.DataRow row in dt.Rows)
+                {
+                    StateDropDown State = new StateDropDown();
+                    State.StateName = (string)row["StateName"];
+                    State.StateID = (int)row["StateID"];
+                    States.Add(State);
+                };
+                LC.StateDrops = States;
+            }
+            catch (Exception ex)
+            {
+
+            }
+
         }
     }
 }
