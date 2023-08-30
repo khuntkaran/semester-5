@@ -75,6 +75,7 @@ namespace Form.Areas.LOC_City.Controllers
                     LC.CityCode = (string)dt2.Rows[0]["CityCode"];
                     LC.CountryID = (int)dt2.Rows[0]["CountryID"];
                     LC.StateID = (int)dt2.Rows[0]["StateID"];
+                    SetState(LC.CountryID);
                 }
                 else
                 {

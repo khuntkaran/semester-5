@@ -6,11 +6,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @model Form.Areas.LOC_City.Models.LOC_CityModel;
-@section Scripts{
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-}
+
 <form method="post" asp-area="LOC_City" asp-controller="LOC_City" asp-action="Save">
     <input type="hidden" asp-for="CityID" />
     <table class="table" align="center">
@@ -44,7 +40,7 @@
             <td>State Name</td>
             <td>:</td>
             <td>
-                <select class=" " id="" asp-for="StateID">
+                <select class=" " id="StateDrop" asp-for="StateID">
                     <option value="none" selected disabled hidden>Select an Option</option>
                     <option>demo1</option>
                     <option>demo2</option>
@@ -68,6 +64,9 @@
 
 
 @section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
     <script>
         function stateChange() {
             console.log(hiii)
@@ -76,10 +75,14 @@
             if (CountryID !== "") {
                 $("#StateID").empty();
                 $("#StateID").append($("<option></option>").val("").html("Select State"));
-                $.ajax(
-                    
-
-                )
+               // $.ajax(
+                   /// url : "@Url.Action("SetState","LOC_City")" + "?&CountryID=" + CountryID
+                   // success : document.getElementById("StateDrop").innerHTML=
+                   // success:foreach (StateDropDown ops in Model.StateDrops)
+                    //        {
+                    //             <option value="@ops.StateID" > @ops.StateName</option>
+                    //        }
+               // )
             }
             else {
                 $("#StateID").empty();
