@@ -58,6 +58,23 @@ namespace Form.Areas.LOC_City.Controllers
                     Countrys.Add(Country);
                 };
                 LC.CountryDrops = Countrys;
+
+
+                DataTable dt3 = new DataTable();
+                SqlCommand objCmd3 = conn.CreateCommand();
+                objCmd.CommandType = CommandType.StoredProcedure;
+                objCmd.CommandText = "PR_State_SelectAll";
+                SqlDataReader objDataReader3 = objCmd.ExecuteReader();
+                dt3.Load(objDataReader3);
+                List<StateDropDown> States = new List<StateDropDown>();
+                foreach (System.Data.DataRow row in dt3.Rows)
+                {
+                    StateDropDown State = new StateDropDown();
+                    State.StateName = (string)row["StateName"];
+                    State.StateID = (int)row["StateID"];
+                    States.Add(State);
+                };
+                LC.StateDrops = States;
                 if (CityID != null)
                 {
                     ViewBag.Data = "For Edit";
@@ -75,7 +92,6 @@ namespace Form.Areas.LOC_City.Controllers
                     LC.CityCode = (string)dt2.Rows[0]["CityCode"];
                     LC.CountryID = (int)dt2.Rows[0]["CountryID"];
                     LC.StateID = (int)dt2.Rows[0]["StateID"];
-                    SetState(LC.CountryID);
                 }
                 else
                 {
@@ -90,9 +106,37 @@ namespace Form.Areas.LOC_City.Controllers
         }
 
 
-        public IActionResult Save(LOC_CityModel city)
+        public IActionResult Save(LOC_CityModel cityModel)
         {
-            return RedirectToAction("CityList");
+            try
+            {
+                String connectionStr = this._configuration.GetConnectionString("myConnectionString");
+                SqlConnection conn = new SqlConnection(connectionStr);
+                conn.Open();
+                SqlCommand objCmd = conn.CreateCommand();
+                objCmd.CommandType = CommandType.StoredProcedure;
+                if (cityModel.CityID != null)
+                {
+                    objCmd.CommandText = "PR_City_UpdateByPK";
+                    objCmd.Parameters.AddWithValue("@CityID", cityModel.CityID);
+                }
+                else
+                {
+                    objCmd.CommandText = "PR_City_Insert";
+                }
+                objCmd.Parameters.AddWithValue("@CountryID",cityModel.CountryID);
+                objCmd.Parameters.AddWithValue("@StateID",cityModel.StateID);
+                objCmd.Parameters.AddWithValue("@CityName", cityModel.CityName);
+                objCmd.Parameters.AddWithValue("@CityCode", cityModel.CityCode);
+                objCmd.ExecuteReader();
+                conn.Close();
+                return RedirectToAction("CityList");
+            }
+            catch (Exception ex)
+            {
+                return RedirectToAction("CityList");
+            }
+
         }
 
         public IActionResult DeleteCity(int CityID)
@@ -117,36 +161,32 @@ namespace Form.Areas.LOC_City.Controllers
             return RedirectToAction("CityList");
         }
 
-        public void SetState(int CountryID)
+        #region DropDownByCountry
+        public IActionResult DropDownByCountry(int CountryID)
         {
-            LOC_CityModel LC = new LOC_CityModel();
-            try
-            {
-                String connectionStr = this._configuration.GetConnectionString("myConnectionString");
-                DataTable dt = new DataTable();
-                SqlConnection conn = new SqlConnection(connectionStr);
-                conn.Open();
-                SqlCommand objCmd = conn.CreateCommand();
-                objCmd.CommandType = CommandType.StoredProcedure;
-                objCmd.CommandText = "PR_State_SelectByFK";
-                objCmd.Parameters.AddWithValue("CountryID", @CountryID);
-                SqlDataReader objDataReader = objCmd.ExecuteReader();
-                dt.Load(objDataReader);
-                List<StateDropDown> States = new List<StateDropDown>();
-                foreach (System.Data.DataRow row in dt.Rows)
-                {
-                    StateDropDown State = new StateDropDown();
-                    State.StateName = (string)row["StateName"];
-                    State.StateID = (int)row["StateID"];
-                    States.Add(State);
-                };
-                LC.StateDrops = States;
-            }
-            catch (Exception ex)
-            {
+            string connectionstr = this._configuration.GetConnectionString("myConnectionString");
+            SqlConnection conn = new SqlConnection(connectionstr);
+            conn.Open();
+            SqlCommand objcmd = conn.CreateCommand();
+            objcmd.CommandType = System.Data.CommandType.StoredProcedure;
+            objcmd.CommandText = "PR_State_SelectByFK";
+            objcmd.Parameters.AddWithValue("@CountryID", CountryID);
+            DataTable dt = new DataTable();
+            SqlDataReader objSDR = objcmd.ExecuteReader();
+            dt.Load(objSDR);
+            conn.Close();
 
+            List<StateDropDown> States = new List<StateDropDown>();
+            foreach (DataRow dr in dt.Rows)
+            {
+                StateDropDown state = new StateDropDown();
+                state.StateID = Convert.ToInt32(dr["StateID"]);
+                state.StateName = dr["StateName"].ToString();
+                States.Add(state);
             }
-
+            var State = States;
+            return Json(State);
         }
+        #endregion
     }
 }

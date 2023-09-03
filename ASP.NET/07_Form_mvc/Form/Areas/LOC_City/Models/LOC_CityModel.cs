@@ -20,7 +20,7 @@ namespace Form.Areas.LOC_City.Models
 
         public List<CountryDropDown> CountryDrops { get; set; }
 
-        public List<StateDropDown>? StateDrops { get; set; }
+        public List<StateDropDown> StateDrops { get; set; }
 
     }
 

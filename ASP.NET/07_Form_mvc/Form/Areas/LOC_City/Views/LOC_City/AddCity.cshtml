@@ -24,14 +24,8 @@
             <td>Country Name</td>
             <td>:</td>
             <td>
-                <select class=" " asp-for="CountryID" onchange="stateChange()">
+                <select class=" " asp-for="CountryID" onchange="stateChange()" asp-items="@(new SelectList(Model.CountryDrops,"CountryID","CountryName"))">
                     <option value="none" selected disabled hidden>Select an Option</option>
-                    @foreach (CountryDropDown ops in Model.CountryDrops)
-                    {
-                    <option value="@ops.CountryID">@ops.CountryName</option>
-                    }
-@*                    @Html.DropDownListFor(model => model.CountryDrops, Model.CountryDrops, "Select Country")
-*@
                 </select><br />
                 <span class="text-danger" asp-validation-for="CountryID"></span>
             </td>
@@ -40,16 +34,9 @@
             <td>State Name</td>
             <td>:</td>
             <td>
-                <select class=" " id="StateDrop" asp-for="StateID">
+                <select class=" "  asp-for="StateID" asp-items="@(new SelectList(Model.StateDrops,"StateID","StateName"))">
                     <option value="none" selected disabled hidden>Select an Option</option>
-                    <option>demo1</option>
-                    <option>demo2</option>
-                    <option>demo3</option>
-
-                    @*@foreach (Dictionary<String, dynamic> ops in Model.Countrys)
-                    {
-                        <option value="@ops["CountryID"]">@ops["CountryName"]</option>
-                    }*@
+                    
                 </select><br />
                 <span class="text-danger" asp-validation-for="StateID"></span>
             </td>
@@ -68,27 +55,37 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
     <script>
+       
         function stateChange() {
-            console.log(hiii)
             var CountryID = $("#CountryID").val();
+
 
             if (CountryID !== "") {
                 $("#StateID").empty();
-                $("#StateID").append($("<option></option>").val("").html("Select State"));
-               // $.ajax(
-                   /// url : "@Url.Action("SetState","LOC_City")" + "?&CountryID=" + CountryID
-                   // success : document.getElementById("StateDrop").innerHTML=
-                   // success:foreach (StateDropDown ops in Model.StateDrops)
-                    //        {
-                    //             <option value="@ops.StateID" > @ops.StateName</option>
-                    //        }
-               // )
-            }
-            else {
+                $("#StateID").append($("<option selected disabled hidden></option>").val("").html("Select an Option"));
+                $.ajax(
+                    {
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        url: "@Url.Action("DropDownByCountry","LOC_City")" + "?&CountryID=" + CountryID,
+                        data: {},
+                        dataType: "json",
+                        success: function (Result) {
+                            console.log(Result)
+                            $.each(Result,
+                                function (key, value) {
+                                    $("#StateID").append($("<option></option>").val(value.stateID).html(value.stateName));
+                                });
+                        },
+                        error: function (r) {
+                            alert("Error while loading combobox.");
+                        }
+                    });
+            } else {
                 $("#StateID").empty();
-                $("#StateID").append($("<option></option>").val("").html("Select State"));
+                $("#StateID").append($("<option selected disabled hidden></option>").val("").html("Select an Option"));
+
             }
         }
     </script>
-    
-}
+    }
