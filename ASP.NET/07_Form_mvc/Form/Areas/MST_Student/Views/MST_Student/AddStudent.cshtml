@@ -17,63 +17,79 @@
         <tr>
             <td>Student Name</td>
             <td>:</td>
-            <td><input asp-for="StudentName" type="text" placeholder="Student Name" /><br /><span class="text-danger" asp-validation-for="StudentName"></span></td>
+            <td><input asp-for="StudentName" type="text" placeholder="Student Name" /><span class="text-danger" asp-validation-for="StudentName"></span></td>
         </tr>
+        <tr>
+            <td>Branch</td>
+            <td>:</td>
+            <td>
+                <select class=" " asp-for="BranchID" asp-items="@(new SelectList(Model.Branches,"BranchID","BranchName"))">
+                    <option value="none" selected disabled hidden>Select an Option</option>
+                </select>
+                <span class="text-danger" asp-validation-for="BranchID"></span></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>:</td>
+            <td>
+                <select class=" " asp-for="CityID"  asp-items="@(new SelectList(Model.cities,"CityID","CityName"))">
+                    <option value="none" selected disabled hidden>Select an Option</option>
+                </select>
+                <span class="text-danger" asp-validation-for="CityID"></span></td>
+        </tr>
+
         <tr>
             <td>Email</td>
             <td>:</td>
-            <td><input asp-for="Email" type="text" placeholder="Student Email" /><br /><span class="text-danger" asp-validation-for="Email"></span></td>
+            <td><input asp-for="Email" type="text" placeholder="Student Email" /><span class="text-danger" asp-validation-for="Email"></span></td>
         </tr>
         <tr>
             <td>MobileNoStudent</td>
             <td>:</td>
-            <td><input asp-for="MobileNoStudent" type="text" placeholder="MobileNoStudent" /><br /><span class="text-danger" asp-validation-for="MobileNoStudent"></span></td>
+            <td><input asp-for="MobileNoStudent" type="text" placeholder="MobileNoStudent" /><span class="text-danger" asp-validation-for="MobileNoStudent"></span></td>
         </tr>
         <tr>
             <td>MobileNoFather</td>
             <td>:</td>
-            <td><input asp-for="MobileNoFather" type="text" placeholder="MobileNoFather" /><br /><span class="text-danger" asp-validation-for="MobileNoFather"></span></td>
+            <td><input asp-for="MobileNoFather" type="text" placeholder="MobileNoFather" /><span class="text-danger" asp-validation-for="MobileNoFather"></span></td>
         </tr>
         <tr>
             <td>Address</td>
             <td>:</td>
-            <td><input asp-for="Address" type="text" placeholder="Address" /><br /><span class="text-danger" asp-validation-for="Address"></span></td>
+            <td><input asp-for="Address" type="text" placeholder="Address" /><span class="text-danger" asp-validation-for="Address"></span></td>
         </tr>
-        @*<tr>
-            <td>State Name</td>
+        <tr>
+            <td>BirthDate</td>
+            <td>:</td>
+            <td><input asp-for="BirthDate" type="date"  /><span class="text-danger" asp-validation-for="BirthDate"></span></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>:</td>
+            <td><input asp-for="Age" type="number" placeholder="Age" /><span class="text-danger" asp-validation-for="Age"></span></td>
+        </tr>
+        <tr>
+            <td>IsActive</td>
             <td>:</td>
             <td>
-                <select class=" " asp-for="StateID">
-                    <option value="none" selected disabled hidden>Select an Option</option>
-                    <option>demo1</option>
-                    <option>demo2</option>
-                    <option>demo3</option>
-
-                    @foreach (Dictionary<String, dynamic> ops in Model.Countrys)
-                    {
-                    <option value="@ops["CountryID"]">@ops["CountryName"]</option>
-                    }
-                </select><br />
-                <span class="text-danger" asp-validation-for="StateID"></span>
+                <label><input asp-for="IsActive" type="radio" name="isActive" value="True" />Yes</label>
+                <label><input asp-for="IsActive" type="radio" name="isActive" value="False" />No</label>
+                <span class="text-danger" asp-validation-for="IsActive"></span></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>:</td>
+            <td>
+                <label><input asp-for="Gender" type="radio" name="gender" value="Male" />Male</label>
+                <label><input asp-for="Gender"  type="radio" name="gender" value="Female" />Female</label>
+                <span class="text-danger" asp-validation-for="Gender"></span>
             </td>
         </tr>
         <tr>
-            <td>Country Name</td>
+            <td>Password</td>
             <td>:</td>
-            <td>
-                <select class=" " asp-for="CountryID">
-                    <option value="none" selected disabled hidden>Select an Option</option>
-                    <option>demo1</option>
-                    <option>demo2</option>
-                    <option>demo3</option>
-                    @* @foreach (Dictionary<String, dynamic> ops in Model.Countrys)
-                    {
-                    <option value="@ops["CountryID"]">@ops["CountryName"]</option>
-                    }
-                </select><br />
-                <span class="text-danger" asp-validation-for="CountryID"></span>
-            </td>
-        </tr>*@
+            <td><input asp-for="Password" type="text" placeholder="Password" /><span class="text-danger" asp-validation-for="Password"></span></td>
+        </tr>
     </table>
     <div class="d-flex justify-content-center">
         <input class="btn btn-outline-success " type="submit" />

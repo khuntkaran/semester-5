@@ -125,5 +125,32 @@ namespace Form.Areas.MST_Branch.Controllers
                 return RedirectToAction("BranchList");
             }
         }
+
+        public IActionResult BranchSearch(String? BranchName, string? BranchCode)
+        {
+            try
+            {
+                String connectionStr = this._configuration.GetConnectionString("myConnectionString");
+                DataTable dt = new DataTable();
+                SqlConnection conn = new SqlConnection(connectionStr);
+                conn.Open();
+                SqlCommand objCmd = conn.CreateCommand();
+                objCmd.CommandType = CommandType.StoredProcedure;
+                objCmd.CommandText = "PR_Branch_Search";
+                objCmd.Parameters.AddWithValue("@BranchName", BranchName);
+                objCmd.Parameters.AddWithValue("@BranchCode", BranchCode);
+                SqlDataReader objDataReader = objCmd.ExecuteReader();
+                dt.Load(objDataReader);
+                conn.Close();
+
+                return View("BranchList", dt);
+            }
+            catch (Exception ex)
+            {
+                return View("BranchList");
+            }
+        }
+
+
     }
 }

@@ -1,447 +1,447 @@
 {
   "Files": [
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\iPortfolioNew.bundle.scp.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\iPortfolioNew.bundle.scp.css",
       "PackagePath": "staticwebassets\\iPortfolioNew.bundle.scp.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\css\\style.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\IMG_4375.jpeg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\IMG_4375.jpeg",
       "PackagePath": "staticwebassets\\img\\IMG_4375.jpeg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\apple-touch-icon.png",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\apple-touch-icon.png",
       "PackagePath": "staticwebassets\\img\\apple-touch-icon.png"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\favicon.png",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\favicon.png",
       "PackagePath": "staticwebassets\\img\\favicon.png"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\hero-bg.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\hero-bg.jpg",
       "PackagePath": "staticwebassets\\img\\hero-bg.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-1.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-1.jpg",
       "PackagePath": "staticwebassets\\img\\portfolio\\portfolio-1.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-2.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-2.jpg",
       "PackagePath": "staticwebassets\\img\\portfolio\\portfolio-2.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-3.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-3.jpg",
       "PackagePath": "staticwebassets\\img\\portfolio\\portfolio-3.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-4.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-4.jpg",
       "PackagePath": "staticwebassets\\img\\portfolio\\portfolio-4.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-5.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-5.jpg",
       "PackagePath": "staticwebassets\\img\\portfolio\\portfolio-5.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-6.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-6.jpg",
       "PackagePath": "staticwebassets\\img\\portfolio\\portfolio-6.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-7.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-7.jpg",
       "PackagePath": "staticwebassets\\img\\portfolio\\portfolio-7.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-8.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-8.jpg",
       "PackagePath": "staticwebassets\\img\\portfolio\\portfolio-8.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-9.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-9.jpg",
       "PackagePath": "staticwebassets\\img\\portfolio\\portfolio-9.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-details-1.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-details-1.jpg",
       "PackagePath": "staticwebassets\\img\\portfolio\\portfolio-details-1.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-details-2.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-details-2.jpg",
       "PackagePath": "staticwebassets\\img\\portfolio\\portfolio-details-2.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-details-3.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\portfolio\\portfolio-details-3.jpg",
       "PackagePath": "staticwebassets\\img\\portfolio\\portfolio-details-3.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\profile-img.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\profile-img.jpg",
       "PackagePath": "staticwebassets\\img\\profile-img.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\testimonials\\testimonials-1.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\testimonials\\testimonials-1.jpg",
       "PackagePath": "staticwebassets\\img\\testimonials\\testimonials-1.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\testimonials\\testimonials-2.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\testimonials\\testimonials-2.jpg",
       "PackagePath": "staticwebassets\\img\\testimonials\\testimonials-2.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\testimonials\\testimonials-3.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\testimonials\\testimonials-3.jpg",
       "PackagePath": "staticwebassets\\img\\testimonials\\testimonials-3.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\testimonials\\testimonials-4.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\testimonials\\testimonials-4.jpg",
       "PackagePath": "staticwebassets\\img\\testimonials\\testimonials-4.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\img\\testimonials\\testimonials-5.jpg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\img\\testimonials\\testimonials-5.jpg",
       "PackagePath": "staticwebassets\\img\\testimonials\\testimonials-5.jpg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\js\\main.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\scss\\Readme.txt",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\scss\\Readme.txt",
       "PackagePath": "staticwebassets\\scss\\Readme.txt"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\aos\\aos.cjs.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\aos\\aos.cjs.js",
       "PackagePath": "staticwebassets\\vendor\\aos\\aos.cjs.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\aos\\aos.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\aos\\aos.css",
       "PackagePath": "staticwebassets\\vendor\\aos\\aos.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\aos\\aos.esm.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\aos\\aos.esm.js",
       "PackagePath": "staticwebassets\\vendor\\aos\\aos.esm.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\aos\\aos.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\aos\\aos.js",
       "PackagePath": "staticwebassets\\vendor\\aos\\aos.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\aos\\aos.js.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\aos\\aos.js.map",
       "PackagePath": "staticwebassets\\vendor\\aos\\aos.js.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap-icons\\bootstrap-icons.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap-icons\\bootstrap-icons.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap-icons\\bootstrap-icons.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap-icons\\bootstrap-icons.json",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap-icons\\bootstrap-icons.json",
       "PackagePath": "staticwebassets\\vendor\\bootstrap-icons\\bootstrap-icons.json"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap-icons\\bootstrap-icons.min.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap-icons\\bootstrap-icons.min.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap-icons\\bootstrap-icons.min.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap-icons\\bootstrap-icons.scss",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap-icons\\bootstrap-icons.scss",
       "PackagePath": "staticwebassets\\vendor\\bootstrap-icons\\bootstrap-icons.scss"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
       "PackagePath": "staticwebassets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
       "PackagePath": "staticwebassets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.rtl.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.esm.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.esm.js.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.esm.min.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.js.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.min.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\css\\animations.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\css\\animations.css",
       "PackagePath": "staticwebassets\\vendor\\boxicons\\css\\animations.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\css\\boxicons.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\css\\boxicons.css",
       "PackagePath": "staticwebassets\\vendor\\boxicons\\css\\boxicons.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\css\\boxicons.min.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\css\\boxicons.min.css",
       "PackagePath": "staticwebassets\\vendor\\boxicons\\css\\boxicons.min.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\css\\transformations.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\css\\transformations.css",
       "PackagePath": "staticwebassets\\vendor\\boxicons\\css\\transformations.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\fonts\\boxicons.eot",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\fonts\\boxicons.eot",
       "PackagePath": "staticwebassets\\vendor\\boxicons\\fonts\\boxicons.eot"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\fonts\\boxicons.svg",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\fonts\\boxicons.svg",
       "PackagePath": "staticwebassets\\vendor\\boxicons\\fonts\\boxicons.svg"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\fonts\\boxicons.ttf",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\fonts\\boxicons.ttf",
       "PackagePath": "staticwebassets\\vendor\\boxicons\\fonts\\boxicons.ttf"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\fonts\\boxicons.woff",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\fonts\\boxicons.woff",
       "PackagePath": "staticwebassets\\vendor\\boxicons\\fonts\\boxicons.woff"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\fonts\\boxicons.woff2",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\boxicons\\fonts\\boxicons.woff2",
       "PackagePath": "staticwebassets\\vendor\\boxicons\\fonts\\boxicons.woff2"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\glightbox\\css\\glightbox.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\glightbox\\css\\glightbox.css",
       "PackagePath": "staticwebassets\\vendor\\glightbox\\css\\glightbox.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\glightbox\\css\\glightbox.min.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\glightbox\\css\\glightbox.min.css",
       "PackagePath": "staticwebassets\\vendor\\glightbox\\css\\glightbox.min.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\glightbox\\css\\plyr.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\glightbox\\css\\plyr.css",
       "PackagePath": "staticwebassets\\vendor\\glightbox\\css\\plyr.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\glightbox\\css\\plyr.min.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\glightbox\\css\\plyr.min.css",
       "PackagePath": "staticwebassets\\vendor\\glightbox\\css\\plyr.min.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\glightbox\\js\\glightbox.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\glightbox\\js\\glightbox.js",
       "PackagePath": "staticwebassets\\vendor\\glightbox\\js\\glightbox.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\glightbox\\js\\glightbox.min.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\glightbox\\js\\glightbox.min.js",
       "PackagePath": "staticwebassets\\vendor\\glightbox\\js\\glightbox.min.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\isotope-layout\\isotope.pkgd.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\isotope-layout\\isotope.pkgd.js",
       "PackagePath": "staticwebassets\\vendor\\isotope-layout\\isotope.pkgd.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\isotope-layout\\isotope.pkgd.min.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\isotope-layout\\isotope.pkgd.min.js",
       "PackagePath": "staticwebassets\\vendor\\isotope-layout\\isotope.pkgd.min.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\php-email-form\\validate.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\php-email-form\\validate.js",
       "PackagePath": "staticwebassets\\vendor\\php-email-form\\validate.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\purecounter\\purecounter_vanilla.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\purecounter\\purecounter_vanilla.js",
       "PackagePath": "staticwebassets\\vendor\\purecounter\\purecounter_vanilla.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\purecounter\\purecounter_vanilla.js.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\purecounter\\purecounter_vanilla.js.map",
       "PackagePath": "staticwebassets\\vendor\\purecounter\\purecounter_vanilla.js.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\swiper\\swiper-bundle.min.css",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\swiper\\swiper-bundle.min.css",
       "PackagePath": "staticwebassets\\vendor\\swiper\\swiper-bundle.min.css"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\swiper\\swiper-bundle.min.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\swiper\\swiper-bundle.min.js",
       "PackagePath": "staticwebassets\\vendor\\swiper\\swiper-bundle.min.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\swiper\\swiper-bundle.min.js.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\swiper\\swiper-bundle.min.js.map",
       "PackagePath": "staticwebassets\\vendor\\swiper\\swiper-bundle.min.js.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\typed.js\\typed.cjs",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\typed.js\\typed.cjs",
       "PackagePath": "staticwebassets\\vendor\\typed.js\\typed.cjs"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\typed.js\\typed.cjs.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\typed.js\\typed.cjs.map",
       "PackagePath": "staticwebassets\\vendor\\typed.js\\typed.cjs.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\typed.js\\typed.module.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\typed.js\\typed.module.js",
       "PackagePath": "staticwebassets\\vendor\\typed.js\\typed.module.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\typed.js\\typed.module.js.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\typed.js\\typed.module.js.map",
       "PackagePath": "staticwebassets\\vendor\\typed.js\\typed.module.js.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\typed.js\\typed.umd.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\typed.js\\typed.umd.js",
       "PackagePath": "staticwebassets\\vendor\\typed.js\\typed.umd.js"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\typed.js\\typed.umd.js.map",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\typed.js\\typed.umd.js.map",
       "PackagePath": "staticwebassets\\vendor\\typed.js\\typed.umd.js.map"
     },
     {
-      "Id": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\wwwroot\\vendor\\waypoints\\noframework.waypoints.js",
+      "Id": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\wwwroot\\vendor\\waypoints\\noframework.waypoints.js",
       "PackagePath": "staticwebassets\\vendor\\waypoints\\noframework.waypoints.js"
     },
     {

@@ -8,22 +8,28 @@
 <p>@ViewBag.Data</p>
 
 <a class="btn btn-outline-primary " asp-area="MST_Student" asp-controller="MST_Student" asp-action="AddStudent">Add Student</a>
-<table class="table text-center table-striped" >
+<div class="container-fluid my-2">
+    <form class="d-flex w-50 " asp-area="MST_Student" asp-controller="MST_Student" asp-action="StudentSearch">
+        <input type="text" class="form-control me-2" placeholder="StudentName" name="StudentName">
+        <input type="text" class="form-control me-2" placeholder="BranchName" name="BranchName">
+        <button class="btn btn-success" type="submit" title="Search"><i class=" bi bi-search"></i></button>
+    </form>
+</div>
+<table class="table text-center table-striped">
     <thead>
         <tr class="">
             <th scope="col">Student ID</th>
             <th scope="col">Student Name</th>
 
-            <th scope="col">BranchName</th>
-            <th scope="col">CityName</th>
-            <th scope="col">StateName</th>
-            <th scope="col">CountryName</th>
-            <th scope="col">MobileNoStudent</th>
+            <th scope="col">Branch Name</th>
+            <th scope="col">City Name</th>
+            <th scope="col">State Name</th>
+            <th scope="col">Country Name</th>
+            <th scope="col">Mobile Student</th>
             <th scope="col">Email</th>
-            <th scope="col">MobileNoFather</th>
+            <th scope="col">Mobile Father</th>
             <th scope="col">Address</th>
             <th scope="col">BirthDate</th>
-            <br />
             <th scope="col">Age</th>
             <th scope="col">IsActive</th>
             <th scope="col">Gender</th>
@@ -52,10 +58,15 @@
                 <td>@row["Address"]</td>
                 <td>@row["BirthDate"]</td>
                 <td>@row["Age"]</td>
-                <td>@row["IsActive"]</td>
+                <td>
+                    @if (row["IsActive"].ToString() =="True")
+                    {
+                        <div>Yes</div>
+                    }
+                    else{<div>No</div>}
+                </td>
                 <td>@row["Gender"]</td>
                 <td>@row["Password"]</td>
-
                 <td>@row["Created"]</td>
                 <td>@row["Modified"]</td>
                 <td>

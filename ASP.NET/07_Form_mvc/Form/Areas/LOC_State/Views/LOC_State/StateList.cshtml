@@ -7,6 +7,13 @@
 @model System.Data.DataTable;
 
 <a class="btn btn-outline-primary " asp-area="LOC_State" asp-controller="LOC_State" asp-action="AddState">Add State</a>
+<div class="container-fluid my-2">
+    <form class="d-flex w-50" asp-area="LOC_State" asp-controller="LOC_State" asp-action="StateSearch">
+        <input type="text" class="form-control me-2" placeholder="StateName" name="StateName">
+        <input type="text" class="form-control me-2" placeholder="StateCode" name="StateCode">
+        <button class="btn btn-success" type="submit" title="Search"><i class=" bi bi-search"></i></button>
+    </form>
+</div>
 <table class="table text-center table-striped">
     <thead>
         <tr class="">

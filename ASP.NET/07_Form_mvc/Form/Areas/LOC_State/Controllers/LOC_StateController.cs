@@ -139,5 +139,31 @@ namespace Form.Areas.LOC_State.Controllers
                 return RedirectToAction("StateList");
             }
         }
+
+        public IActionResult StateSearch(String? StateName, string? StateCode)
+        {
+            try
+            {
+                String connectionStr = this._configuration.GetConnectionString("myConnectionString");
+                DataTable dt = new DataTable();
+                SqlConnection conn = new SqlConnection(connectionStr);
+                conn.Open();
+                SqlCommand objCmd = conn.CreateCommand();
+                objCmd.CommandType = CommandType.StoredProcedure;
+                objCmd.CommandText = "PR_State_Search";
+                objCmd.Parameters.AddWithValue("@StateName", StateName);
+                objCmd.Parameters.AddWithValue("@StateCode", StateCode);
+                SqlDataReader objDataReader = objCmd.ExecuteReader();
+                dt.Load(objDataReader);
+                conn.Close();
+
+                return View("StateList", dt);
+            }
+            catch (Exception ex)
+            {
+                return View("StateList");
+            }
+        }
+
     }
 }

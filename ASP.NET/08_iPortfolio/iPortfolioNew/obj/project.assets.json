@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\iPortfolioNew.csproj",
+      "projectUniqueName": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\iPortfolioNew.csproj",
       "projectName": "iPortfolioNew",
-      "projectPath": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\iPortfolioNew.csproj",
+      "projectPath": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\iPortfolioNew.csproj",
       "packagesPath": "C:\\Users\\Apex\\.nuget\\packages\\",
-      "outputPath": "E:\\semester-5\\ASP.NET\\wasteg\\iPortfolioNew\\iPortfolioNew\\obj\\",
+      "outputPath": "E:\\semester-5\\ASP.NET\\08_iPortfolio\\iPortfolioNew\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Apex\\AppData\\Roaming\\NuGet\\NuGet.Config",

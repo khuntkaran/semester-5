@@ -188,5 +188,31 @@ namespace Form.Areas.LOC_City.Controllers
             return Json(State);
         }
         #endregion
+
+        public IActionResult CitySearch(String? CityName, string? CityCode)
+        {
+            try
+            {
+                String connectionStr = this._configuration.GetConnectionString("myConnectionString");
+                DataTable dt = new DataTable();
+                SqlConnection conn = new SqlConnection(connectionStr);
+                conn.Open();
+                SqlCommand objCmd = conn.CreateCommand();
+                objCmd.CommandType = CommandType.StoredProcedure;
+                objCmd.CommandText = "PR_City_Search";
+                objCmd.Parameters.AddWithValue("@CityName", CityName);
+                objCmd.Parameters.AddWithValue("@CityCode", CityCode);
+                SqlDataReader objDataReader = objCmd.ExecuteReader();
+                dt.Load(objDataReader);
+                conn.Close();
+
+                return View("CityList", dt);
+            }
+            catch (Exception ex)
+            {
+                return View("CityList");
+            }
+        }
+
     }
 }

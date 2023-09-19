@@ -127,5 +127,30 @@ namespace Form.Areas.LOC_Contry.Controllers
                 return RedirectToAction("CountryList");
             }
         }
+
+        public IActionResult CountrySearch(String? CountryName,string? CountryCode)
+        {
+            try
+            {
+                String connectionStr = this._configuration.GetConnectionString("myConnectionString");
+                DataTable dt = new DataTable();
+                SqlConnection conn = new SqlConnection(connectionStr);
+                conn.Open();
+                SqlCommand objCmd = conn.CreateCommand();
+                objCmd.CommandType = CommandType.StoredProcedure;
+                objCmd.CommandText = "PR_Country_Search";
+                objCmd.Parameters.AddWithValue("@CountryName", CountryName);
+                objCmd.Parameters.AddWithValue("@CountryCode", CountryCode);
+                SqlDataReader objDataReader = objCmd.ExecuteReader();
+                dt.Load(objDataReader);
+                conn.Close();
+
+                return View("CountryList",dt);
+            }
+            catch (Exception ex)
+            {
+                return View("CountryList");
+            }
+        }
     }
 }

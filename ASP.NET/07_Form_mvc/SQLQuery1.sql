@@ -90,7 +90,7 @@ GO
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [dbo].[MST_Student](
-	[StudentID] [int] NOT NULL,
+	[StudentID] [int] IDENTITY(1,1) NOT NULL,
 	[BranchID] [int] NOT NULL,
 	[CityID] [int] NOT NULL,
 	[StudentName] [varchar](100) NOT NULL,
@@ -510,7 +510,7 @@ exec [dbo].[PR_Branch_DeleteByPK] 3
 //----------------------student table-----------------------
 
 
-alter PROCEDURE [dbo].[PR_Student_SelectAll]
+Create PROCEDURE [dbo].[PR_Student_SelectAll]
 as
 select
 [dbo].[MST_Student].[StudentID]
@@ -595,7 +595,6 @@ exec [dbo].[PR_Student_SelectByPK] 1
 
 
 CREATE PROCEDURE [dbo].[PR_Student_Insert]
-@StudentID			int,
 @BranchID			int, 
 @CityID				int,
 @StudentName		varchar(100),
@@ -611,7 +610,6 @@ CREATE PROCEDURE [dbo].[PR_Student_Insert]
 as 
 Insert Into [dbo].[MST_Student]
 (
-[StudentID],
 [BranchID],
 [CityID],
 [StudentName],
@@ -626,8 +624,7 @@ Insert Into [dbo].[MST_Student]
 [Password]
 )
 values
-(
-@StudentID	,	
+(	
 @BranchID		,
 @CityID			,
 @StudentName	,
@@ -642,7 +639,7 @@ values
 @Password		
 )
 
-exec [dbo].[PR_Student_Insert] 2,2,3,"hello","hello","hello","hello","hello",'2012/04/06 12:23:45',2,true,"hello","hello"
+exec [dbo].[PR_Student_Insert] 2,3,"hello2","hello3","hello","hello","hello",'2012/04/06 12:23:45',2,true,"hello","hello"
 
 CREATE PROCEDURE [dbo].[PR_Student_UpdateByPK]
 @StudentID			int,
@@ -692,3 +689,140 @@ exec [dbo].[PR_Student_DeleteByPK]  2
 
 select * from MST_Student
 select * from MST_Branch
+
+
+
+//-----------search------------
+
+
+ CREATE PROCEDURE [dbo].[PR_Country_Search] "d","1"
+ @CountryName varchar(50)=null,
+ @CountryCode varchar(50)=null
+AS
+SELECT
+[dbo].[LOC_Country].[CountryID]
+ ,[dbo].[LOC_Country].[CountryName]
+ ,[dbo].[LOC_Country].[CountryCode]
+  ,[dbo].[LOC_Country].[Created]
+  ,[dbo].[LOC_Country].[Modified]
+FROM [dbo].[LOC_Country]
+where (@CountryName is null or [dbo].[LOC_Country].[CountryName] like '%'+@CountryName+'%')
+		and
+		(@CountryCode is null or [dbo].[LOC_Country].[CountryCode] like '%'+@CountryCode+'%')
+ORDER BY [dbo].[LOC_Country].[CountryName]
+
+
+
+
+CREATE PROCEDURE [dbo].[PR_State_Search]
+ @StateName varchar(50)=null,
+ @StateCode varchar(50)=null
+AS
+SELECT
+[dbo].[LOC_State].[StateID]
+ ,[dbo].[LOC_State].[StateName]
+ ,[dbo].[LOC_State].[StateCode]
+ ,[dbo].[LOC_Country].[CountryID]
+ ,[dbo].[LOC_Country].[CountryName]
+  ,[dbo].[LOC_State].[Created]
+    ,[dbo].[LOC_State].[Modified]
+FROM [dbo].[LOC_State]
+INNER JOIN [dbo].[LOC_Country]
+ON [dbo].[LOC_Country].[CountryID] = [dbo].[LOC_State].[CountryID]
+where (@StateName is null or [dbo].[LOC_State].[StateName] like '%'+@StateName+'%')
+		and
+		(@StateCode is null or [dbo].[LOC_State].[StateCode] like '%'+@StateCode+'%')
+ORDER BY [dbo].[LOC_Country].[CountryName]
+ ,[dbo].[LOC_State].[StateName]
+
+
+
+
+
+CREATE PROCEDURE [dbo].[PR_City_Search]
+ @CityName varchar(50)=null,
+ @CityCode varchar(50)=null
+AS
+SELECT [dbo].[LOC_City].[CityID]
+ ,[dbo].[LOC_City].[CityName]
+ ,[dbo].[LOC_City].[CityCode]
+ ,[dbo].[LOC_City].[StateID]
+ ,[dbo].[LOC_City].[CountryID]
+ ,[dbo].[LOC_State].[StateName]
+ ,[dbo].[LOC_Country].[CountryName]
+ ,[dbo].[LOC_City].[Created]
+ ,[dbo].[LOC_City].[Modified]
+FROM [dbo].[LOC_City]
+INNER JOIN [dbo].[LOC_State]
+ON [dbo].[LOC_State].[StateID] = [dbo].[LOC_City].[StateID]
+INNER JOIN [dbo].[LOC_Country]
+ON [dbo].[LOC_Country].[CountryID] = [dbo].[LOC_State].[CountryID]
+where (@CityName is null or [dbo].[LOC_City].[CityName] like '%'+@CityName+'%')
+		and
+		(@CityCode is null or [dbo].[LOC_City].[CityCode] like '%'+@CityCode+'%')
+ORDER BY [dbo].[LOC_Country].[CountryName]
+ ,[dbo].[LOC_State].[StateName]
+ ,[dbo].[LOC_City].[CityName]
+
+
+
+  CREATE PROCEDURE [dbo].[PR_Branch_Search]
+ @BranchName varchar(50)=null,
+ @BranchCode varchar(50)=null
+AS
+SELECT
+[dbo].[MST_Branch].[BranchID],
+[dbo].[MST_Branch].[BranchName],
+[dbo].[MST_Branch].[BranchCode],
+[dbo].[MST_Branch].[Created],
+[dbo].[MST_Branch].[Modified]
+from [dbo].[MST_Branch]
+where (@BranchName is null or [dbo].[MST_Branch].[BranchName] like '%'+@BranchName+'%')
+		and
+		(@BranchCode is null or [dbo].[MST_Branch].[BranchCode] like '%'+@BranchCode+'%')
+ORDER By [dbo].[MST_Branch].[BranchName]
+
+
+
+create PROCEDURE [dbo].[PR_Student_Search]
+@StudentName varchar(50)=null,
+ @BranchName varchar(50)=null
+as
+select
+[dbo].[MST_Student].[StudentID]
+,[dbo].[MST_Student].[BranchID]
+,[dbo].[MST_Student].[CityID]
+,[dbo].[MST_Student].[StudentName]
+,[dbo].[MST_Branch].[BranchName]
+,[dbo].[LOC_City].[CityName]
+,[dbo].[LOC_State].[StateName]
+,[dbo].[LOC_Country].[CountryName]
+,[dbo].[MST_Student].[MobileNoStudent]
+,[dbo].[MST_Student].[Email]
+,[dbo].[MST_Student].[MobileNoFather]
+,[dbo].[MST_Student].[Address]
+,[dbo].[MST_Student].[BirthDate]
+,[dbo].[MST_Student].[Age]
+,[dbo].[MST_Student].[IsActive]
+,[dbo].[MST_Student].[Gender]
+,[dbo].[MST_Student].[Password]
+,[dbo].[MST_Student].[Created]
+,[dbo].[MST_Student].[Modified]
+from [dbo].[MST_Student]
+inner join [dbo].[LOC_City]
+on [dbo].[MST_Student].[CityID]=[dbo].[LOC_City].[CityID]
+inner join [dbo].[LOC_State]
+on [dbo].[LOC_City].[StateID]=[dbo].[LOC_State].[StateID]
+inner join [dbo].[LOC_Country]
+on [dbo].[LOC_City].[CountryID]=[dbo].[LOC_Country].[CountryID]
+inner join [dbo].[MST_Branch]
+on [dbo].[MST_Student].[BranchID]=[dbo].[MST_Branch].[BranchID]
+where (@BranchName is null or [dbo].[MST_Branch].[BranchName] like '%'+@BranchName+'%')
+		and
+		(@StudentName is null or [dbo].[MST_Student].[StudentName] like '%'+@StudentName+'%')
+order by 
+[dbo].[MST_Student].[StudentName]
+,[dbo].[MST_Branch].[BranchName]
+,[dbo].[LOC_City].[CityName]
+,[dbo].[LOC_State].[StateName]
+,[LOC_Country].[CountryName]
