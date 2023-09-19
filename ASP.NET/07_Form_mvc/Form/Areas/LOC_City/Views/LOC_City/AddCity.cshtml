@@ -56,7 +56,7 @@
     }
     <script>
        
-        function stateChange() {
+        function stateChange(StateID) {
             var CountryID = $("#CountryID").val();
 
 
@@ -71,11 +71,14 @@
                         data: {},
                         dataType: "json",
                         success: function (Result) {
-                            console.log(Result)
+                            console.log("result from database to ajax",Result)
                             $.each(Result,
                                 function (key, value) {
                                     $("#StateID").append($("<option></option>").val(value.stateID).html(value.stateName));
                                 });
+                            if (StateID != null) {
+                                $("#StateID").val(StateID)
+                            }
                         },
                         error: function (r) {
                             alert("Error while loading combobox.");
@@ -84,8 +87,15 @@
             } else {
                 $("#StateID").empty();
                 $("#StateID").append($("<option selected disabled hidden></option>").val("").html("Select an Option"));
-
             }
         }
+
+
+        $(document).ready(function () {
+            if ($("#CountryID").val() != null) {
+                stateChange(parseInt($("#StateID").val()));
+            }
+        });
+
     </script>
     }
