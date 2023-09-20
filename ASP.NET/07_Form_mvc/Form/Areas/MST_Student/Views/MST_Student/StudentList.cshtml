@@ -44,7 +44,9 @@
     <tbody>
         @foreach (System.Data.DataRow row in Model.Rows)
         {
-            <tr>
+            <a asp-area="MST_Student" asp-controller="MST_Student" asp-action="StudentDetail" asp-route-Dr="row">
+            <div>
+                <tr  >
                 <th scope="row">@row["StudentID"]</th>
                 <td>@row["StudentName"]</td>
 
@@ -80,6 +82,8 @@
                     </form>
                 </td>
             </tr>
+            </div></a>
         }
     </tbody>
 </table>
+

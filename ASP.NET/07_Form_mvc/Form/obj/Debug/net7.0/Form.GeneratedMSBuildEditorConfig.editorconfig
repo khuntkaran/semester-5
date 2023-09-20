@@ -84,6 +84,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX1N0dWRlbnRcVmlld3NcTVNUX1N0dWRlbnRcQWRkU3R1ZGVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/MST_Student/Views/MST_Student/StudentDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX1N0dWRlbnRcVmlld3NcTVNUX1N0dWRlbnRcU3R1ZGVudERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/semester-5/ASP.NET/07_Form_mvc/Form/Areas/MST_Student/Views/MST_Student/StudentList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX1N0dWRlbnRcVmlld3NcTVNUX1N0dWRlbnRcU3R1ZGVudExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

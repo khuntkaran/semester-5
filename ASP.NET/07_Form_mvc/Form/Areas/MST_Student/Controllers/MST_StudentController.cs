@@ -203,5 +203,9 @@ namespace Form.Areas.MST_Student.Controllers
             }
         }
 
+        public IActionResult StudentDetail(DataRow Dr)
+        {
+            return View(Dr);
+        }
     }
 }
