@@ -15,28 +15,17 @@
         <button class="btn btn-success" type="submit" title="Search"><i class=" bi bi-search"></i></button>
     </form>
 </div>
-<table class="table text-center table-striped">
+<table class="table text-center table-striped" id="myTable">
     <thead>
         <tr class="">
             <th scope="col">Student ID</th>
             <th scope="col">Student Name</th>
-
             <th scope="col">Branch Name</th>
             <th scope="col">City Name</th>
             <th scope="col">State Name</th>
             <th scope="col">Country Name</th>
-            <th scope="col">Mobile Student</th>
-            <th scope="col">Email</th>
-            <th scope="col">Mobile Father</th>
-            <th scope="col">Address</th>
-            <th scope="col">BirthDate</th>
-            <th scope="col">Age</th>
             <th scope="col">IsActive</th>
             <th scope="col">Gender</th>
-            <th scope="col">Password</th>
-            
-            <th scope="col">Created</th>
-            <th scope="col">Modified</th>
             <th scope="col"></th>
             <th scope="col"></th>
         </tr>
@@ -44,33 +33,24 @@
     <tbody>
         @foreach (System.Data.DataRow row in Model.Rows)
         {
-            <a asp-area="MST_Student" asp-controller="MST_Student" asp-action="StudentDetail" asp-route-Dr="row">
-            <div>
-                <tr  >
+            <tr class="mytr" data-url='/MST_Student/MST_Student/StudentDetail?StudentID=@Convert.ToInt32(row["StudentID"])'>
                 <th scope="row">@row["StudentID"]</th>
                 <td>@row["StudentName"]</td>
-
                 <td>@row["BranchName"]</td>
                 <td>@row["CityName"]</td>
                 <td>@row["StateName"]</td>
                 <td>@row["CountryName"]</td>
-                <td>@row["MobileNoStudent"]</td>
-                <td>@row["Email"]</td>
-                <td>@row["MobileNoFather"]</td>
-                <td>@row["Address"]</td>
-                <td>@row["BirthDate"]</td>
-                <td>@row["Age"]</td>
                 <td>
-                    @if (row["IsActive"].ToString() =="True")
-                    {
+                        @if (row["IsActive"].ToString() == "True")
+                        {
                         <div>Yes</div>
-                    }
-                    else{<div>No</div>}
+                        }
+                        else
+                        {
+                            <div>No</div>
+                        }
                 </td>
                 <td>@row["Gender"]</td>
-                <td>@row["Password"]</td>
-                <td>@row["Created"]</td>
-                <td>@row["Modified"]</td>
                 <td>
                     <form method="post" asp-area="MST_Student" asp-controller="MST_Student" asp-action="AddStudent" asp-route-StudentID="@Convert.ToInt32(row["StudentID"])">
                         <button type="submit" class="btn btn-outline-warning">Edit</button>
@@ -82,8 +62,20 @@
                     </form>
                 </td>
             </tr>
-            </div></a>
+            
         }
     </tbody>
 </table>
 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.mytr').click(function () {
+            var url = $(this).data('url');
+            if (url) {
+                window.location.href = url;
+            }
+        });
+    });
+</script>

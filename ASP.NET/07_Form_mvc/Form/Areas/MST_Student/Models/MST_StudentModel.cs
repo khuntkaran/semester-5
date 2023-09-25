@@ -45,6 +45,8 @@ namespace Form.Areas.MST_Student.Models
         public List<Branch> Branches { get; set;}
 
         public List<City> cities { get; set;}
+
+
     }
 
 

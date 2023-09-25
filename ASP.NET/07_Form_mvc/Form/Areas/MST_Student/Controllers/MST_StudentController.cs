@@ -115,8 +115,6 @@ namespace Form.Areas.MST_Student.Controllers
             
             
         }
-
-
         public IActionResult Save(MST_StudentModel studentModel)
         {
             try
@@ -203,9 +201,22 @@ namespace Form.Areas.MST_Student.Controllers
             }
         }
 
-        public IActionResult StudentDetail(DataRow Dr)
+        public IActionResult StudentDetail(int StudentID)
         {
-            return View(Dr);
+            DataTable dt = new DataTable();
+            String connectionStr = this._configuration.GetConnectionString("myConnectionString");
+            SqlConnection conn = new SqlConnection(connectionStr);
+            conn.Open();
+            SqlCommand objcmd3 = conn.CreateCommand();
+            objcmd3.CommandType = CommandType.StoredProcedure;
+            objcmd3.CommandText = "PR_Student_SelectByPK";
+            objcmd3.Parameters.AddWithValue("@StudentID", StudentID);
+            SqlDataReader reader3 = objcmd3.ExecuteReader();
+            dt.Load(reader3);
+            conn.Close();
+            return View(dt.Rows[0]);
         }
+
+
     }
 }

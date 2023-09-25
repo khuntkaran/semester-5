@@ -23,8 +23,10 @@
             <td><input asp-for="BranchCode" type="text" placeholder="Branch Code" /><br /><span class="text-danger" asp-validation-for="BranchCode"></span></td>
         </tr>
     </table>
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-evenly">
         <input class="btn btn-outline-success " type="submit" />
-
+        <a class="btn btn-outline-danger" asp-area="MST_Branch" asp-controller="MST_Branch" asp-action="BranchList">
+            Cancel
+        </a>
     </div>
 </form>

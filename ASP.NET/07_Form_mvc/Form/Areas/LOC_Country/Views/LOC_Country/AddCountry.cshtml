@@ -24,8 +24,11 @@
             <td><input asp-for="CountryCode" type="text" placeholder="Country Code" /><br /><span class="text-danger" asp-validation-for="CountryCode"></span></td>
         </tr>
     </table>
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-evenly">
         <input class="btn btn-outline-success " type="submit" />
-
+        <a class="btn btn-outline-danger" asp-area="LOC_Country" asp-controller="LOC_Country" asp-action="CountryList">
+            Cancel
+        </a>
     </div>
+    
 </form>

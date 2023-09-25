@@ -5,6 +5,70 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 
 }
-@model System.Data.DataRow;
-<h1>hello</h1>
-<h1>@Model["StudentName"]</h1>
+
+@model System.Data.DataRow
+
+<a class="btn mb-2 btn-outline-danger" asp-area="MST_Student" asp-controller="MST_Student" asp-action="StudentList">
+    Back
+</a>
+<table class="table table-striped">
+    <tbody>
+        <tr>
+            <th scope="row">StudentID</th>
+            <td>@Model["StudentID"]</td>
+            <th scope="row">StudentName</th>
+            <td>@Model["StudentName"]</td>
+        </tr>
+        <tr>
+            <th scope="row">BranchName</th>
+            <td>@Model["BranchName"]</td>
+            <th scope="row">CityName</th>
+            <td>@Model["CityName"]</td>
+        </tr>
+        <tr>
+            <th scope="row">StateName</th>
+            <td>@Model["StateName"]</td>
+            <th scope="row">CountryName</th>
+            <td>@Model["CountryName"]</td>
+        </tr>
+        <tr>
+            <th scope="row">MobileNoStudent</th>
+            <td>@Model["MobileNoStudent"]</td>
+            <th scope="row">MobileNoFather</th>
+            <td>@Model["MobileNoFather"]</td>
+        </tr>
+        <tr>
+            <th scope="row">Email</th>
+            <td>@Model["Email"]</td>
+            <th scope="row">Address</th>
+            <td>@Model["Address"]</td>
+        </tr>
+        <tr>
+            <th scope="row">BirthDate</th>
+            <td>@Model["BirthDate"]</td>
+            <th scope="row">Age</th>
+            <td>@Model["Age"]</td>
+        </tr>
+        <tr>
+            <th scope="row">IsActive</th>
+            <td>
+                @if (@Model["IsActive"].ToString() == "True"){<div>Yes</div>}
+                else{<div>No</div>}
+            </td>
+            <th scope="row">Gender</th>
+            <td>@Model["Gender"]</td>
+        </tr>
+        <tr>
+            <th scope="row">Created</th>
+            <td>@Model["Created"]</td>
+            <th scope="row">Modified</th>
+            <td>@Model["Modified"]</td>
+        </tr>
+        <tr >
+            <th scope="row">Password</th>
+            <td  >@Model["Password"]</td>
+            <th scope="row"></th>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
